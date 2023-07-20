@@ -177,6 +177,19 @@
         &copy; Yun & Kai 版權所有
     </footer>
 
+    <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "104506522728159");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
     <!-- Your SDK code -->
     <script>
         window.fbAsyncInit = function () {
