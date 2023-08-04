@@ -30,7 +30,9 @@ section {
 }
 .banner {
     background: linear-gradient(115deg, #ffffffb7 70%,transparent 50%) center center,url('https://picsum.photos/1920/1080') right center / auto 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 300px;
 }
@@ -82,6 +84,9 @@ section {
     }
     .banner {
         background: linear-gradient(115deg, #ffffffb7 65%,transparent 50%) center center,url('https://picsum.photos/1920/1080') right center / auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 450px;
     }
     .banner-text h1 {
@@ -105,5 +110,8 @@ section {
     }
     .banner {
         background: linear-gradient(115deg, #ffffffb7 50%,transparent 50%) center center,url('https://picsum.photos/1920/1080') right center / auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
