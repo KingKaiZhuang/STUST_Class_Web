@@ -106,7 +106,7 @@ section {
 @media (min-width:1200px) {
     .wrap {
         max-width: 600px;
-        margin-left: 200px;
+        margin-left: 150px;
     }
     .banner {
         background: linear-gradient(115deg, #ffffffb7 50%,transparent 50%) center center,url('https://picsum.photos/1920/1080') right center / auto 100%;
