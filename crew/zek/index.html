@@ -17,20 +17,26 @@
       height: 100vh;
     }
     .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
       position: relative;
-      height: 600px;
-      width: 400px;
+      gap: 40px;
+      height: 300px;
+      width: 300px;
       background: #212121;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       overflow: hidden;
+      --card-margin-left: 5%;
     }
     .card::before {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 10px;
+      height: 8px;
       width: 400px;
       background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
       z-index: 1;
@@ -42,10 +48,11 @@
     .card h1 {
       position: relative;
       font-family: Roboto, sans-serif;
-      font-weight: 500;
+      font-weight: 900;
       font-size: 32px;
       color: white;
       z-index: 5;
+      margin-left: var(--card-margin-left);
     }
     .card p {
       position: relative;
@@ -53,11 +60,14 @@
       font-size: 16px;
       color: white;
       z-index: 5;
+      width: 90%;
+      margin-left: var(--card-margin-left);
     }
     .btn {
       --btn-color: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
       position: relative;
       padding: 16px 32px;
+      margin-left: var(--card-margin-left);
       font-family: Roboto, sans-serif;
       font-weight: 500;
       font-size: 16px;
@@ -144,7 +154,7 @@
 <body>
   <div class="card">
     <h1>Zequlard</h1>
-    <p>If your are interest about me or my work, go to my instergram and follow me.</p>
+    <p>If your are interest about me or my work, you can go to my profile or instergram to follow me.</p>
     <button class="btn">
       <span>Button</span><span>
         <svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
