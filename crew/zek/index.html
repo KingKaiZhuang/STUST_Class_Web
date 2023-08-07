@@ -45,6 +45,11 @@
     .card:hover::before {
       height: 100%;
     }
+    .card .name {
+      display: flex;
+      flex-direction: row;
+      margin-left: var(--card-margin-left);
+    }
     .card h1 {
       position: relative;
       font-family: Roboto, sans-serif;
@@ -52,7 +57,6 @@
       font-size: 32px;
       color: white;
       z-index: 5;
-      margin-left: var(--card-margin-left);
     }
     .card p {
       position: relative;
@@ -168,7 +172,10 @@
 </head>
 <body>
   <div class="card">
-    <h1>Zequlard</h1>
+    <div class="name">
+      <h1>Zequlard</h1>
+      <div class="icon">777</div>
+    </div>
     <p>If your are interest about me or my work, you can go to my profile or instergram to follow me. I'm not often online.</p>
     <button class="btn">
       <span>Button</span><span>
