@@ -43,17 +43,17 @@ const app = {
                     introduce:""
                 },
                 {
-                    imgUrl: "https://picsum.photos/300/200",
+                    imgUrl: "images/Visual programming language.png",
                     title: "圖像化程式設計",
                     introduce:""
                 },
                 {
-                    imgUrl: "https://picsum.photos/300/200",
+                    imgUrl: "images/Web Design Certification.png",
                     title: "網頁設計檢定",
                     introduce:""
                 },
                 {
-                    imgUrl: "https://picsum.photos/300/200",
+                    imgUrl: "images/Computer Software Application Certification.png",
                     title: "電腦軟體應用檢定",
                     introduce:""
                 },
