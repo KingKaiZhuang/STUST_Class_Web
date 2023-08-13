@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/image/order_system_tittle_icon.svg">
+    <link rel="icon" type="image/svg+xml" href="/image/goble/icon-shop.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.js"></script>
     <title>點餐服務</title>
     <style>
     .my-card-img{
@@ -14,15 +14,19 @@
         width: 100%;
         object-fit: cover;
     }
+	a{
+		text-decoration: none;
+	}
     body{
+		font-family: Arial, Helvetica, sans-serif;
         background-image: linear-gradient(-205deg,#eeaeca 0%,#94bbe9 100%);
     }
    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary  p-2 mb-5 opacity-75 shadow">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  p-2 mb-5 opacity-75 ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">STUST_CLASS</a>
+            <a class="navbar-brand" href="../index.html">TechClass 3A</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,121 +34,340 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/classroom_experience/classroom_experience.html">課堂心得</a>
+                        <a class="nav-link active" href="#">新增團購訂單</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="container mb-4"><h2><strong>團購訂單</strong></h2></div>
+
+
+    <div class="container mb-4"><h2><strong>早午餐</strong></h2></div>
     <div class="container">
-        <div class="row justify-content-around">
-            <div class="col-10 col-lg-5 col-md-11">
-              <div class="card mb-4 shadow ">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="/image/cat.jpg" class="img-fluid rounded-start w-100 my-card-img ">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">辛新早餐店</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="row justify-content-center ">      
+            <div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="https://2.bp.blogspot.com/-e8oFEaQTmOg/WyoMBif7NHI/AAAAAAAAkA0/HfmWnK8EY38XBPu9O8rhqLDQ9fpuzQTywCK4BGAYYCw/s1600/%25E8%25BE%259B%25E6%2596%25B0%25E6%2597%25A9%25E9%25A4%2590%25E5%25BA%2597.png"
+                        	class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">辛新早餐店</h5>
+                    	</div>
+                	</div>
+				</a>
             </div>
-              <div class="col-10 col-lg-5 col-md-11 ">
-                <div class="card mb-4 shadow">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/image/cat.jpg" class="img-fluid rounded-start w-100 my-card-img ">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-10 col-lg-5 col-md-11">
-                <div class="card mb-4 shadow">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/image/cat.jpg" class="img-fluid rounded-start   w-100 my-card-img ">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-10 col-lg-5 col-md-11">
-                <div class="card mb-4 shadow">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/image/cat.jpg" class="img-fluid rounded-start w-100 my-card-img ">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-10 col-lg-5 col-md-11">
-                <div class="card mb-4 shadow">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/image/cat.jpg" class="img-fluid rounded-start w-100 my-card-img ">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-10 col-lg-5 col-md-11">
-                <div class="card mb-4 shadow">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/image/cat.jpg" class="img-fluid rounded-start w-100 my-card-img ">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="/image/goble/洋蔥屋暫時照片.png " 
+							class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">洋蔥屋</h5>
+                    	</div>
+                	</div>
+				</a>
+            </div>
+            <div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIl-904gbOCMgIGMN6zbA9M9Qw7aP11OP2tA&usqp=CAU " 
+							class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">coming soon</h5>
+                    	</div>
+                	</div>
+				</a>
+            </div>
+            <div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIl-904gbOCMgIGMN6zbA9M9Qw7aP11OP2tA&usqp=CAU" 
+							class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">coming soon</h5>
+                    	</div>
+                	</div>
+				</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container mb-4"><h2><strong>午餐</strong></h2></div>
+
+	<div class="container">
+        <div class="row justify-content-center ">      
+			<div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="https://scontent.frmq2-1.fna.fbcdn.net/v/t39.30808-6/347793301_276977468095510_1411598429387361315_n.jpg?stp=dst-jpg_p960x960&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=uCSJQ4ZAM9wAX-Zev6A&_nc_ht=scontent.frmq2-1.fna&oh=00_AfAHBIR8p4N4hj68Re_GpAP1NI42AgFJNUWgJ2VqRMQ2LQ&oe=64D277A0" 
+							class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">我家麵店</h5>
+                    	</div>
+                	</div>
+				</a>
+            </div>
+            <div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="https://images.deliveryhero.io/image/fd-tw/LH/kley-hero.jpg " 
+							class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">馬來小館</h5>
+                    	</div>
+                	</div>
+				</a>
+            </div>
+            <div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="https://img.eattnn.com/20210316161142_1.jpg" 
+							class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">十號咖哩家</h5>
+                    	</div>
+                	</div>
+				</a>
+            </div>
+            <div class="col-10 col-lg-3 col-md-6" >
+            	<a  href="#"class="" >
+                	<div class="card border-0  " style=" background: transparent;">
+                		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIl-904gbOCMgIGMN6zbA9M9Qw7aP11OP2tA&usqp=CAU" 
+							class="card-img-top rounded-3 img-fluid" style="height: 170px; width: 300px; object-fit: cover;object-position: center center" alt="...">
+                    	<div class="card-body ">
+                        	<h5 class="card-title">coming soon</h5>
+                    	</div>
+                	</div>
+				</a>
+            </div>
+
         </div>
     </div>
     
-    <div class="container">
+    <!-- <div class="container">
       <div class="row justify-content-center">
         <div class="ratio ratio-16x9 w-75 ">
           <iframe src="https://www.youtube.com/embed/kcelgrGY1h8" title="YouTube video" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- https://www.youtube.com/embed/kcelgrGY1h8 -->
+
+    <div id="app" class="my-5">
+      <div class="container gx-2">
+        <div class="row gx-3 bg-light py-3">
+          <div class="col-md-4">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action"
+              v-for="item in products"
+              @click.prevent="selectnow(item)"
+              :class="{'active' : item.name === itemselect.name}">
+                <h6 class="card-title mb-1">{{ item.name }}</h6>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0"><small>{{ item.engName }}</small></p>
+                  <p class="mb-0"><small>NT$ {{ item.price }}</small></p>
+                </div>
+              </a>
+              <!-- <a href="#" class="list-group-item list-group-item-action active">
+                <h6 class="card-title mb-1">鮮奶茶</h6>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0"><small>Milk Tea</small></p>
+                  <p class="mb-0"><small>NT$ 40</small></p>
+                </div>
+              </a> -->
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card mb-2">
+              <div v-if="!itemselect.name" class="position-absolute text-white d-flex align-items-center justify-content-center active" style="top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0, 0, 0, 0.65); z-index: 100;">請先選擇飲品</div>
+              <div class="card-body px-4">
+                <div class="mb-3">
+                  <label for="productNum" class="form-label">數量</label>
+                  <input 
+                  v-model="itemselect.count"
+                  type="number" class="form-control" id="productNum" placeholder="數量" min="0">
+                </div>
+                <div class="mb-3">
+                  <label for="productNum" class="form-label d-block">冰塊*</label>
+                  <div 
+                  v-for="(cold,key) in iceType" :key="'cold' + key" 
+                  class="form-check form-check-inline">
+                  <input
+                  :value="cold"
+                  v-model="itemselect.colding" class="form-check-input" name="iceType" type="radio" :id="'cold' + key">
+                  <label class="form-check-label" :for="'cold' + key">{{ cold }}</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="productNum" class="form-label d-block">甜度*</label>
+                  <div 
+                  v-for="(sweet,key) in sugarType" :key="'sweet' + key"
+                  class="form-check form-check-inline">
+                    <input
+                    :value="sweet"
+                    v-model="itemselect.sweeting"
+                    class="form-check-input" name="sugarType" type="radio" :id="'sweet' + key">
+                    <label class="form-check-label" for="'sweet' + key">{{ sweet }}</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="productNum" class="form-label d-block">加料</label>
+                  <div v-for="(topping,key) in toppingsType" :key="'topping' + key" class="form-check form-check-inline">
+                    <input
+                    :value="topping"
+                    v-model="itemselect.topping"
+                    class="form-check-input" type="checkbox" :id="'topping' + key">
+                    <label class="form-check-label" :for="'topping' + key">{{ topping }}</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="productNotice" class="form-label">備註</label>
+                  <textarea class="form-control" id="productNotice" rows="2"></textarea>
+                </div>
+                <div class="d-flex gap-2">
+                  <button @click="resetOrder()" class="btn btn-outline-primary w-100" type="button">取消</button>
+                  <button @click="addnow(itemselect)" class="btn btn-primary w-100" type="button">加入</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">品項</th>
+                      <th scope="col">冰塊</th>
+                      <th scope="col">甜度</th>
+                      <th scope="col">加料</th>
+                      <th scope="col">單價</th>
+                      <th scope="col">數量</th>
+                      <th scope="col">小計</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="(item,key) in addselect" :key="'order',key">
+                      <th scope="row">{{ item.name }}<br>
+                        <small class="text-muted fw-normal">備註：阿姨，我不想努力了</small>
+                      </th>
+                      <td>{{ item.sweeting}}</td>
+                      <td>{{ item.colding}}</td>
+                      <td>{{ item.topping.toString() }}</td>
+                      <td>{{ item.price + item.topping.length * 10}}</td>
+                      <td>{{ item.count }}</td>
+                      <td class="text-end">{{ item.total }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="text-end">共 NT$ {{ addtotal }} 元</p>
+                <button class="btn btn-sm btn-secondary w-100">重新選擇</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    const App = {
+      data() {
+        return {
+          itemselect: {
+    
+          },
+          addtotal: 0,
+          addselect: [],
+          iceType: ['正常冰', '少冰', '微冰', '去冰', '熱'],
+          sugarType: ['全糖', '七分', '半糖', '三分', '無糖'],
+          toppingsType: ['珍珠', '粉條', '小粉圓', '椰果', '芋頭'],
+          products: [
+            {
+              name: '珍珠鮮奶茶',
+              engName: 'Pearl Milk Tea',
+              price: 60,
+            },
+            {
+              name: '鮮奶茶',
+              engName: 'Milk Tea',
+              price: 50,
+            },
+            {
+              name: '古意冬瓜茶',
+              engName: 'Winter Melon Drink',
+              price: 30,
+            },
+            {
+              name: '蜜香紅茶',
+              engName: 'Black Tea',
+              price: 30,
+            },
+            {
+              name: '包種青茶',
+              engName: 'Black Tea',
+              price: 35,
+            },
+            {
+              name: '檸檬烏龍',
+              engName: 'Lemon Oolong Tea',
+              price: 55,
+            },
+            {
+              name: '薑母茶',
+              engName: 'Ginger Tea',
+              price: 55,
+            },
+            {
+              name: '青草茶',
+              engName: 'Herbal Tea',
+              price: 35,
+            },
+            {
+              name: '金桔檸檬',
+              engName: 'Kumquat Lemonade',
+              price: 40,
+            },
+            {
+              name: '柳澄青茶',
+              engName: 'Orange Mountain Tea',
+              price: 45,
+            },
+          ],
+        }
+      },
+      methods: {
+        selectnow(product){
+          this.itemselect = {
+            ...product,
+            topping:[],
+            colding:{},
+            sweeting:{},
+            count: 1
+          };
+        },
+        counttotal(){
+          this.addtotal = 0;
+          this.addselect.forEach((item) =>{
+            this.addtotal += item.total;
+          })
+        },
+        resetOrder(){
+          this.itemselect = {};
+        },
+        addnow(product){
+          const pro = {
+            ...product,
+            total: (product.price + product.topping.length * 10) * product.count
+          }
+          this.addselect.push(pro);
+          this.counttotal();
+          this.resetOrder();
+        }
+      },
+    };
+    
+    Vue.createApp(App).mount('#app');
+    </script> 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous">
