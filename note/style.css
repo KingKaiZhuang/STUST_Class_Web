@@ -5,7 +5,8 @@
 }
 /* note-title */
 .note-title {
-    background-image: linear-gradient(to top, #a8ede98d 0%, #fed6e384 100%);}
+    background-image: linear-gradient(to top, #a8ede98d 0%, #fed6e384 100%);
+}
 .note-title h2 {
     position: relative;
     font-size: 2.3rem;
