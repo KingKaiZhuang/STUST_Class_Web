@@ -11,3 +11,8 @@
 .note-card:hover {
     box-shadow: none;
 }
+
+.note-card img {
+    width: 100%;
+    height: 100%;
+}
