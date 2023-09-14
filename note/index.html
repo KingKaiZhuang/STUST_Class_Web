@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.min.js" integrity="sha512-Wbf9QOX8TxnLykSrNGmAc5mDntbpyXjOw9zgnKql3DgQ7Iyr5TCSPWpvpwDuo+jikYoSNMD9tRRH854VfPpL9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-2 fixed-top position-sticky">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">STUST_CLASS</a>
+            <a class="navbar-brand" href="#">Note</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" style="cursor: pointer;">課堂心得</a>
+                        <a class="nav-link" href="/note/">課堂筆記</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Experience/index.html">課堂心得</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/order system/order system.html">點餐服務</a>
@@ -33,44 +32,66 @@
         </div>
     </nav>
 
-    <div class="note-title">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 p-5 text-center">
-                    <h2>歷年來科目心得</h2>
-                    <h3>Insights on Subjects Over the Years</h3>
-                </div>
+    <!-- 主要內容區域 -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- 左側側邊欄 -->
+            <div class="col-md-3 course-list">
+                <h4>課程列表</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#c-sharp">C#</a></li>
+                    <li class="list-group-item"><a href="#python">Python</a></li>
+                    <li class="list-group-item"><a href="#nodeJs">Node.js</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
-
-    <div id="app">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div v-for="(item,key) in subject" :key="item.imgUrl" class="swiper-slide">
-                    <div class="card h-100 shadow">
-                        <img :src="item.imgUrl" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ item.title }}</h5>
-                            <!-- <p class="card-text">{{ item.introduce }}</p> -->
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima animi hic recusandae. Veritatis dolor corrupti distinctio illum natus illo vitae libero placeat veniam consectetur eius, mollitia eveniet blanditiis quidem porro?</p>
+            <!-- 主內容區域 -->
+            <div class="col-md-9">
+                <div id="c-sharph" class="note-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="" alt="數學圖片" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">數學筆記</h2>
+                                <p class="card-text">這是有關數學的筆記內容...</p>
+                                <a href="#">閱讀更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="science" class="note-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="" alt="科學圖片" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Python</h2>
+                                <p class="card-text">這是有關科學的筆記內容...</p>
+                                <a href="https://www.notion.so/python-267cf94c02944c1595ac45bd5d55bcef">閱讀更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="history" class="note-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="" alt="歷史圖片" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">歷史筆記</h2>
+                                <p class="card-text">這是有關歷史的筆記內容...</p>
+                                <a href="#">閱讀更多</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="vue.js"></script>
-    <script src="scrip.js"></script>
-
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script></body>
 </html>
